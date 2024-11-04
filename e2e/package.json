@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+    "scripts": {
+      "e2etest": "playwright test ./tests",
+      "e2etest:ci": "CI=true npm run e2etest"
+    },
   "author": "",
   "license": "ISC",
   "devDependencies": {
